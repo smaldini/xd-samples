@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.batch:spring-batch-admin-resources:1.3.0.RELEASE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.batch/spring-batch-admin-resources/1.3.0.RELEASE/94683cd8995d9f5fcf58d6a0e727589e298a93f3/spring-batch-admin-resources-1.3.0.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.batch/spring-batch-admin-resources/1.3.0.RELEASE/c68e94376908d8aff165820792c42b8c62017d0b/spring-batch-admin-resources-1.3.0.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

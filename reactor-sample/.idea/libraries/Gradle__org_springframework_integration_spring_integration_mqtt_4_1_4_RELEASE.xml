@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.integration:spring-integration-mqtt:4.1.4.RELEASE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.integration/spring-integration-mqtt/4.1.4.RELEASE/4a45467e60e4da149d057d3e1b31e36ea91046cf/spring-integration-mqtt-4.1.4.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.integration/spring-integration-mqtt/4.1.4.RELEASE/5298b4dbcf04f335c8f6b314cbacc2face0f484a/spring-integration-mqtt-4.1.4.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

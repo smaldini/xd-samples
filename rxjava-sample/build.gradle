@@ -1,0 +1,52 @@
+ext {
+	springIntegrationVersion='4.1.5.RELEASE'
+	springXdVersion = '1.2.0.BUILD-SNAPSHOT'
+	hadoopVersion = '2.6.0'
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '2.3'
+}
+
+group = 'org.springframework.xd.samples'
+version = '1.0.0.BUILD-SNAPSHOT'
+
+buildscript {
+	repositories {
+		mavenLocal()
+		mavenCentral()
+		maven { url "http://repo.spring.io/plugins-snapshot" }
+		maven { url 'http://repo.spring.io/plugins-release' }
+		maven { url "http://repo.spring.io/release" }
+		maven { url "http://repo.spring.io/milestone" }
+		maven { url "http://repo.spring.io/snapshot" }
+		jcenter()
+	}
+	dependencies {
+		classpath("org.springframework.xd:spring-xd-module-plugin:1.2.0.BUILD-SNAPSHOT")
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.3.RELEASE")
+		classpath 'org.springframework.build.gradle:propdeps-plugin:0.0.6'
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'spring-xd-module'
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+	jcenter()
+	maven { url "http://repo.spring.io/release" }
+	maven { url "http://repo.spring.io/snapshot" }
+	maven { url "http://repo.spring.io/milestone" }
+}
+
+description = "Custom module using Reactor"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+	compile "org.springframework.xd:spring-xd-rxjava:${springXdVersion}"
+}

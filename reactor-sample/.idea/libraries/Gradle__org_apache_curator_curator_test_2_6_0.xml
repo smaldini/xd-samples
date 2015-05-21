@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.curator:curator-test:2.6.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-test/2.6.0/5f55c3eeb4c14d3937487b5e211ccc7330f9630e/curator-test-2.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.curator/curator-test/2.6.0/20bd5ee649de33866264e9c29615951eb93b1fc4/curator-test-2.6.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
