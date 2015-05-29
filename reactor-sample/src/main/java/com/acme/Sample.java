@@ -1,17 +1,21 @@
 package com.acme;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.reactivestreams.Publisher;
-import org.springframework.xd.reactor.Processor;
+import org.reactivestreams.Subscriber;
+import org.springframework.messaging.Message;
+import org.springframework.xd.reactor.EnableReactorModule;
+import org.springframework.xd.reactor.ReactiveProcessor;
+import reactor.fn.Supplier;
 import reactor.rx.Stream;
 
 /**
  * @author Stephane Maldini
  */
-public class Sample implements Processor<Object, Object> {
+@EnableReactorModule(concurrency = 4)
+public class Sample implements ReactiveProcessor<Message, Message> {
+
 	@Override
-	public Publisher<Object> process(Stream<Object> inputStream) {
-		return inputStream;
+	public void accept(Stream<Message> messageStream, Supplier<Subscriber<Message>> subscriberSupplier) {
+		messageStream
+				.subscribe(subscriberSupplier.get());
 	}
 }

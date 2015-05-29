@@ -1,5 +1,6 @@
 package com.acme;
 
+import org.springframework.context.annotation.Import;
 import org.springframework.xd.rxjava.Processor;
 import rx.Observable;
 
